@@ -1,0 +1,1278 @@
+<html>
+<head>
+	<style>
+		body {width: 960px; margin: 0px auto; padding:20px;}
+		h1, h5 {text-align: center;}
+		div:not(.shape) {margin: 30px;}
+		style {
+			display: block; 
+			white-space: pre; 
+			background: #333; 
+			color: white; 
+			font: 12px Monaco; 
+			padding: 0 15px;
+			border-radius: 5px;
+		}
+		.shape {
+			margin: 30px 15px;
+			width: 450px;
+			float: left; 
+			border-top: #999 solid 1px; 
+			padding-top: 20px;
+		}
+
+	</style>
+</head>
+<body>
+<h1>This is a collection of CSS shapes.</h1>
+<h5>All code is copied from <a href="http://css-tricks.com/examples/ShapesOfCSS/">CSS-Tricks.com</a>, with minor edits to fit the documentation display purpose.</h5>
+<div class="shape">
+<h2>Square</h2>
+<div id="square"></div>
+<style contenteditable>
+#square {
+	width: 100px;
+	height: 100px;
+	background: red;
+}
+	
+</style>
+</div>
+
+<div class="shape">
+					<h2>Rectangle</h2>
+					<div id="rectangle"></div>
+					<style contenteditable>
+#rectangle {
+	width: 200px;
+	height: 100px;
+	background: red;
+}
+					</style>
+
+
+			</div>
+
+				<div class="shape">
+					<h2>Circle</h2>
+					<div id="circle"></div>
+					<style contenteditable>
+#circle {
+	width: 100px;
+	height: 100px;
+	background: red;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}
+
+/* Cleaner, but slightly less support: use "50%" as value */
+					</style>
+
+				</div>
+
+				<div class="shape">
+					<h2>Oval</h2>
+					<div id="oval"></div>
+					<style contenteditable>
+#oval {
+	width: 200px;
+	height: 100px;
+	background: red;
+	-moz-border-radius: 100px / 50px;
+	-webkit-border-radius: 100px / 50px;
+	border-radius: 100px / 50px;
+}
+
+/* Cleaner, but slightly less support: use "50%" as value */
+					</style>
+
+				</div>
+
+
+				<div class="shape">
+					<h2>Triangle Up</h2>
+					<div id="triangle-up"></div>
+
+					<style contenteditable>
+#triangle-up {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid red;
+}
+					</style>
+
+				</div>
+
+				<div class="shape">
+					<h2>Triangle Down</h2>
+					<div id="triangle-down"></div>
+					<style contenteditable>
+#triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 100px solid red;
+}
+					</style>
+				</div>
+
+				<div class="shape">
+					<h2>Triangle Left</h2>
+					<div id="triangle-left"></div>
+					<style contenteditable>
+#triangle-left {
+	width: 0;
+	height: 0;
+	border-top: 50px solid transparent;
+	border-right: 100px solid red;
+	border-bottom: 50px solid transparent;
+}
+					</style>
+				</div>
+
+				<div class="shape">
+					<h2>Triangle Right</h2>
+					<div id="triangle-right"></div>
+					<style contenteditable>
+#triangle-right {
+	width: 0;
+	height: 0;
+	border-top: 50px solid transparent;
+	border-left: 100px solid red;
+	border-bottom: 50px solid transparent;
+}
+					</style>
+				</div>
+
+
+				<div class="shape">
+					<h2>Triangle Top Left</h2>
+					<div id="triangle-topleft"></div>
+					<style contenteditable>
+#triangle-topleft {
+	width: 0;
+	height: 0;
+	border-top: 100px solid red;
+	border-right: 100px solid transparent;
+}
+					</style>
+				</div>
+
+				<div class="shape">
+				<h2>Triangle Top Right</h2>
+				<div id="triangle-topright"></div>
+				<style contenteditable>
+#triangle-topright {
+	width: 0;
+	height: 0;
+	border-top: 100px solid red;
+	border-left: 100px solid transparent;
+
+}
+				</style>
+				</div>
+
+				<div class="shape">
+					<h2>Triangle Bottom Left</h2>
+					<div id="triangle-bottomleft"></div>
+					<style contenteditable>
+#triangle-bottomleft {
+	width: 0;
+	height: 0;
+	border-bottom: 100px solid red;
+	border-right: 100px solid transparent;
+}
+					</style>
+				</div>
+
+				<div class="shape">
+					<h2>Triangle Bottom Right</h2>
+					<div id="triangle-bottomright"></div>
+					<style contenteditable>
+#triangle-bottomright {
+	width: 0;
+	height: 0;
+	border-bottom: 100px solid red;
+	border-left: 100px solid transparent;
+}
+					</style>
+				</div>
+
+				<div class="shape">
+
+					<h2>Curved Tail Arrow <a href="http://about.me/fwd">via Ando Razafimandimby</a></h2>
+
+					<div id="curvedarrow"></div>
+
+					<style contenteditable>
+#curvedarrow {
+  position: relative;
+  width: 0;
+  height: 0;
+  border-top: 9px solid transparent;
+  border-right: 9px solid red;
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+}
+#curvedarrow:after {
+  content: "";
+  position: absolute;
+  border: 0 solid transparent;
+  border-top: 3px solid red;
+  border-radius: 20px 0 0 0;
+  top: -12px;
+  left: -9px;
+  width: 12px;
+  height: 12px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+					</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>Trapezoid</h2>
+
+					<div id="trapezoid"></div>
+
+					<style contenteditable>
+#trapezoid {
+	border-bottom: 100px solid red;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	height: 0;
+	width: 100px;
+}
+					</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>Parallelogram</h2>
+
+					<div id="parallelogram"></div>
+
+					<style contenteditable>
+#parallelogram {
+	width: 150px;
+	height: 100px;
+	-webkit-transform: skew(20deg);
+	   -moz-transform: skew(20deg);
+	     -o-transform: skew(20deg);
+	background: red;
+}
+					</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>Star (6-points)</h2>
+
+					<div id="star-six"></div>
+
+					<style contenteditable>
+#star-six {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid red;
+	position: relative;
+}
+#star-six:after {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 100px solid red;
+	position: absolute;
+	content: "";
+	top: 30px;
+	left: -50px;
+}
+					</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>Star (5-points) <a href="http://kitmacallister.com/2011/css-only-5-point-star/">via Kit MacAllister</a></h2>
+
+					<div id="star-five"></div>
+
+					<style contenteditable>
+#star-five {
+   margin: 50px 0;
+   position: relative;
+   display: block;
+   color: red;
+   width: 0px;
+   height: 0px;
+   border-right:  100px solid transparent;
+   border-bottom: 70px  solid red;
+   border-left:   100px solid transparent;
+   -moz-transform:    rotate(35deg);
+   -webkit-transform: rotate(35deg);
+   -ms-transform:     rotate(35deg);
+   -o-transform:      rotate(35deg);
+}
+#star-five:before {
+   border-bottom: 80px solid red;
+   border-left: 30px solid transparent;
+   border-right: 30px solid transparent;
+   position: absolute;
+   height: 0;
+   width: 0;
+   top: -45px;
+   left: -65px;
+   display: block;
+   content: '';
+   -webkit-transform: rotate(-35deg);
+   -moz-transform:    rotate(-35deg);
+   -ms-transform:     rotate(-35deg);
+   -o-transform:      rotate(-35deg);
+
+}
+#star-five:after {
+   position: absolute;
+   display: block;
+   color: red;
+   top: 3px;
+   left: -105px;
+   width: 0px;
+   height: 0px;
+   border-right: 100px solid transparent;
+   border-bottom: 70px solid red;
+   border-left: 100px solid transparent;
+   -webkit-transform: rotate(-70deg);
+   -moz-transform:    rotate(-70deg);
+   -ms-transform:     rotate(-70deg);
+   -o-transform:      rotate(-70deg);
+   content: '';
+}
+					</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>Pentagon</h2>
+
+					<div id="pentagon"></div>
+
+					<style contenteditable>
+#pentagon {
+    position: relative;
+    width: 54px;
+    border-width: 50px 18px 0;
+    border-style: solid;
+    border-color: red transparent;
+}
+#pentagon:before {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -85px;
+    left: -18px;
+    border-width: 0 45px 35px;
+    border-style: solid;
+    border-color: transparent transparent red;
+}
+					</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>Hexagon</h2>
+
+					<div id="hexagon"></div>
+
+					<style contenteditable>
+#hexagon {
+	width: 100px;
+	height: 55px;
+	background: red;
+	position: relative;
+}
+#hexagon:before {
+	content: "";
+	position: absolute;
+	top: -25px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 25px solid red;
+}
+#hexagon:after {
+	content: "";
+	position: absolute;
+	bottom: -25px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 25px solid red;
+}
+					</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>Octagon</h2>
+
+					<div id="octagon"></div>
+
+					<style contenteditable>
+#octagon {
+	width: 100px;
+	height: 100px;
+	background: red;
+	position: relative;
+}
+
+#octagon:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-bottom: 29px solid red;
+	border-left: 29px solid white;
+	border-right: 29px solid white;
+	width: 42px;
+	height: 0;
+}
+
+#octagon:after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	border-top: 29px solid red;
+	border-left: 29px solid white;
+	border-right: 29px solid white;
+	width: 42px;
+	height: 0;
+}
+					</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>Heart <a href="http://nicolasgallagher.com/">via Nicolas Gallagher</a></h2>
+
+					<div id="heart"></div>
+
+					<style contenteditable>
+#heart {
+    position: relative;
+    width: 100px;
+    height: 90px;
+}
+#heart:before,
+#heart:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: red;
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 50px 50px 0 0;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+       -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+         -o-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+}
+#heart:after {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+       -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+         -o-transform-origin: 100% 100%;
+            transform-origin :100% 100%;
+}
+					</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>Infinity <a href="http://nicolasgallagher.com/">via Nicolas Gallagher</a></h2>
+
+					<div id="infinity"></div>
+
+					<style contenteditable>
+#infinity {
+    position: relative;
+    width: 212px;
+    height: 100px;
+}
+
+#infinity:before,
+#infinity:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    border: 20px solid red;
+    -moz-border-radius: 50px 50px 0 50px;
+         border-radius: 50px 50px 0 50px;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+}
+
+#infinity:after {
+    left: auto;
+    right: 0;
+    -moz-border-radius: 50px 50px 50px 0;
+         border-radius: 50px 50px 50px 0;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
+					</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>Diamond Square <a href="http://josephsilber.com">via Joseph Silber</a></h2>
+
+					<div id="diamond"></div>
+
+					<style scoped contenteditable>
+#diamond {
+	width: 0;
+	height: 0;
+	border: 50px solid transparent;
+	border-bottom-color: red;
+	position: relative;
+	top: -50px;
+}
+#diamond:after {
+	content: '';
+	position: absolute;
+	left: -50px;
+	top: 50px;
+	width: 0;
+	height: 0;
+	border: 50px solid transparent;
+	border-top-color: red;
+}
+
+</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>Diamond Shield <a href="http://josephsilber.com">via Joseph Silber</a></h2>
+
+					<div id="diamond-shield"></div>
+
+					<style scoped contenteditable>
+#diamond-shield {
+	width: 0;
+	height: 0;
+	border: 50px solid transparent;
+	border-bottom: 20px solid red;
+	position: relative;
+	top: -50px;
+}
+#diamond-shield:after {
+	content: '';
+	position: absolute;
+	left: -50px; top: 20px;
+	width: 0;
+	height: 0;
+	border: 50px solid transparent;
+	border-top: 70px solid red;
+}
+
+</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>Diamond Narrow <a href="http://josephsilber.com">via Joseph Silber</a></h2>
+
+					<div id="diamond-narrow"></div>
+
+					<style scoped contenteditable>
+#diamond-narrow {
+	width: 0;
+	height: 0;
+	border: 50px solid transparent;
+	border-bottom: 70px solid red;
+	position: relative;
+	top: -50px;
+}
+#diamond-narrow:after {
+	content: '';
+	position: absolute;
+	left: -50px; top: 70px;
+	width: 0;
+	height: 0;
+	border: 50px solid transparent;
+	border-top: 70px solid red;
+}
+
+</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>Cut Diamond <a>via Alexander Futekov</a></h2>
+
+					<div id="cut-diamond"></div>
+
+					<style scoped contenteditable style="margin-top: 90px;">
+#cut-diamond {
+    border-style: solid;
+    border-color: transparent transparent red transparent;
+    border-width: 0 25px 25px 25px;
+    height: 0;
+    width: 50px;
+    position: relative;
+    margin: 20px 0 50px 0;
+}
+#cut-diamond:after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: -25px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: red transparent transparent transparent;
+    border-width: 60px 50px 0 50px;
+}
+
+</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>Egg</h2>
+
+					<div id="egg"></div>
+
+					<style scoped contenteditable>
+#egg {
+   display:block;
+   width: 110px;
+   height: 150px;
+   background-color: red;
+   border-radius:50%  50%  50%  50%  / 60%   60%   40%  40%;
+}
+
+</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>Pac-Man</h2>
+
+					<div id="pacman"></div>
+
+					<style scoped contenteditable>
+#pacman {
+  width: 0px;
+  height: 0px;
+  border-right: 60px solid transparent;
+  border-top: 60px solid red;
+  border-left: 60px solid red;
+  border-bottom: 60px solid red;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+}
+
+</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>Talk Bubble</h2>
+
+					<div id="talkbubble"></div>
+
+					<style scoped contenteditable>
+#talkbubble {
+   width: 120px;
+   height: 80px;
+   background: red;
+   position: relative;
+   -moz-border-radius:    10px;
+   -webkit-border-radius: 10px;
+   border-radius:         10px;
+}
+#talkbubble:before {
+   content:"";
+   position: absolute;
+   right: 100%;
+   top: 26px;
+   width: 0;
+   height: 0;
+   border-top: 13px solid transparent;
+   border-right: 26px solid red;
+   border-bottom: 13px solid transparent;
+}
+
+</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>12 Point Burst <a href="http://commondream.net/post/8848553728/pure-css-badges">via Alan Johnson</a></h2>
+
+					<div id="burst-12"></div>
+
+					<style scoped contenteditable>
+#burst-12 {
+    background: red;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    text-align: center;
+}
+#burst-12:before, #burst-12:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 80px;
+    background: red;
+}
+#burst-12:before {
+    -webkit-transform: rotate(30deg);
+       -moz-transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+         -o-transform: rotate(30deg);
+}
+#burst-12:after {
+    -webkit-transform: rotate(60deg);
+       -moz-transform: rotate(60deg);
+        -ms-transform: rotate(60deg);
+         -o-transform: rotate(60deg);
+}
+
+</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>8 Point Burst <a href="http://commondream.net/post/8848553728/pure-css-badges">via Alan Johnson</a></h2>
+
+					<div id="burst-8"></div>
+
+					<style scoped contenteditable>
+#burst-8 {
+    background: red;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    text-align: center;
+    -webkit-transform: rotate(20deg);
+       -moz-transform: rotate(20deg);
+        -ms-transform: rotate(20deg);
+         -o-transform: rotate(20eg);
+}
+#burst-8:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 80px;
+    background: red;
+    -webkit-transform: rotate(135deg);
+       -moz-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+         -o-transform: rotate(135deg);
+}
+
+</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>Yin Yang <a href="http://www.futekov.com/alexander/">via Alexander Futekov</a></h2>
+
+					<div id="yin-yang"></div>
+
+					<style scoped contenteditable>
+#yin-yang {
+	width: 96px;
+	height: 48px;
+	background: #eee;
+	border-color: red;
+	border-style: solid;
+	border-width: 2px 2px 50px 2px;
+	border-radius: 100%;
+	position: relative;
+}
+
+#yin-yang:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	background: #eee;
+	border: 18px solid red;
+	border-radius: 100%;
+	width: 12px;
+	height: 12px;
+}
+
+#yin-yang:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	background: red;
+	border: 18px solid #eee;
+	border-radius:100%;
+	width: 12px;
+	height: 12px;
+}
+
+</style>
+
+				</div>
+
+				<div class="shape">
+
+					<h2>Badge Ribbon <a href="http://www.red-team-design.com/">via Catalin Rosu</a></h2>
+
+					<div id="badge-ribbon"></div>
+
+					<style scoped contenteditable style="margin-top: 40px;">
+#badge-ribbon {
+ position: relative;
+ background: red;
+ height: 100px;
+ width: 100px;
+ -moz-border-radius:    50px;
+ -webkit-border-radius: 50px;
+ border-radius:         50px;
+}
+
+#badge-ribbon:before,
+#badge-ribbon:after {
+  content: '';
+  position: absolute;
+  border-bottom: 70px solid red;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  top: 70px;
+  left: -10px;
+  -webkit-transform: rotate(-140deg);
+  -moz-transform:    rotate(-140deg);
+  -ms-transform:     rotate(-140deg);
+  -o-transform:      rotate(-140deg);
+}
+
+#badge-ribbon:after {
+  left: auto;
+  right: -10px;
+  -webkit-transform: rotate(140deg);
+  -moz-transform:    rotate(140deg);
+  -ms-transform:     rotate(140deg);
+  -o-transform:      rotate(140deg);
+}
+
+</style>
+
+				</div>
+
+        <div class="shape">
+
+          <h2>Space Invader <a href="http://ecsspert.com/">via Vlad Zinculescu</a></h2>
+
+          <div id="space-invader"></div>
+
+          <style scoped contenteditable>
+#space-invader{
+
+  box-shadow:
+    0 0 0 1em red,
+    0 1em 0 1em red,
+    -2.5em 1.5em 0 .5em red,
+    2.5em 1.5em 0 .5em red,
+    -3em -3em 0 0 red,
+    3em -3em 0 0 red,
+    -2em -2em 0 0 red,
+    2em -2em 0 0 red,
+    -3em -1em 0 0 red,
+    -2em -1em 0 0 red,
+    2em -1em 0 0 red,
+    3em -1em 0 0 red,
+    -4em 0 0 0 red,
+    -3em 0 0 0 red,
+    3em 0 0 0 red,
+    4em 0 0 0 red,
+    -5em 1em 0 0 red,
+    -4em 1em 0 0 red,
+    4em 1em 0 0 red,
+    5em 1em 0 0 red,
+    -5em 2em 0 0 red,
+    5em 2em 0 0 red,
+    -5em 3em 0 0 red,
+    -3em 3em 0 0 red,
+    3em 3em 0 0 red,
+    5em 3em 0 0 red,
+    -2em 4em 0 0 red,
+    -1em 4em 0 0 red,
+    1em 4em 0 0 red,
+    2em 4em 0 0 red;
+
+    background: red;
+    width: 1em;
+    height: 1em;
+    overflow: hidden;
+
+    margin: 50px 0 70px 65px;
+  }
+
+</style>
+
+        </div>
+
+        <div class="shape">
+
+          <h2>TV Screen</h2>
+
+          <div id="tv"></div>
+
+          <style scoped contenteditable>
+#tv {
+  position: relative;
+  width: 200px;
+  height: 150px;
+  margin: 20px 0;
+  background: red;
+  border-radius: 50% / 10%;
+  color: white;
+  text-align: center;
+  text-indent: .1em;
+}
+#tv:before {
+  content: '';
+  position: absolute;
+  top: 10%;
+  bottom: 10%;
+  right: -5%;
+  left: -5%;
+  background: inherit;
+  border-radius: 5% / 50%;
+}
+
+</style>
+
+        </div>
+
+        <div class="shape">
+
+          <h2>Chevron <a href="http://twitter.com/apticknor">via Anthony Ticknor</a></h2>
+
+          <div id="double-chevron">
+          	<div id="chevron"></div>
+          	<div id="chevron"></div>
+          </div>
+
+          <style scoped contenteditable>
+#chevron {
+  position: relative;
+  text-align: center;
+  padding: 12px;
+  margin: 5px;
+  height: 8px;
+  width: 200px;
+}
+
+#chevron:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 51%;
+  background: red;
+  -webkit-transform: skew(0deg, 12deg);
+  -moz-transform: skew(0deg, 12deg);
+  -ms-transform: skew(0deg, 12deg);
+  -o-transform: skew(0deg, 12deg);
+  transform: skew(0deg, 12deg);
+}
+#chevron:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  background: red;
+  -webkit-transform: skew(0deg, -12deg);
+  -moz-transform: skew(0deg, -12deg);
+  -ms-transform: skew(0deg, -12deg);
+  -o-transform: skew(0deg, -12deg);
+  transform: skew(0deg, -12deg);
+}​
+#double-chevron {margin: 20px 0;}
+
+</style>
+
+        </div>
+
+        <div class="shape">
+
+          <h2>Magnifying Glass</h2>
+
+          <div id="magnifying-glass"></div>
+
+          <style contenteditable>
+#magnifying-glass
+{
+ font-size: 10em; /* This controls the size. */
+ display: inline-block;
+ width: 0.4em;
+ height: 0.4em;
+ border: 0.1em solid red;
+ position: relative;
+ border-radius: 0.35em;
+}
+#magnifying-glass::before
+{
+ content: "";
+ display: inline-block;
+ position: absolute;
+ right: -0.25em;
+ bottom: -0.1em;
+ border-width: 0;
+ background: red;
+ width: 0.35em;
+ height: 0.08em;
+ -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+     -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+}
+          </style>
+
+        </div>
+
+		</div><!-- shapes -->
+
+	</div><!-- page wrap -->
+
+ <style type="text/css" style="display: none !important;">
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	body {
+		overflow-x: hidden;
+	}
+	.bsa_it_ad {
+		padding: 8px 4px 8px 12px !important;
+		position: relative;
+		border: 0 !important;
+		background: #D6D5D5 !important;
+		border-top: 0 !important;
+		box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+		font: 11px "Lucida Grande", Sans-Serif !important;
+	}
+	.bsa_it_ad:before, .bsa_it_ad:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 6px;
+		width: 100%;
+		height: 100%;
+		background: #989898;
+		border-bottom: 6px solid #989898;
+		z-index: -1;
+		box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+	}
+	.bsa_it_ad:before {
+		top: 0;
+		left: 12px;
+		z-index: -2;
+		background: #6C6666;
+		border-bottom: 12px solid #6C6666;
+	}
+
+	.bsa_it_ad a {
+	  margin: 0 !important;
+		padding: 0 !important;
+	}
+	.bsa_it_ad a img {
+	  border: 0 !important;
+		position: static !important;
+	}
+	.bsa_it_ad a:hover img {
+		margin: 0 !important;
+	}
+	.bsa_it_ad a:hover {
+	  background: none !important;
+	}
+	.bsa_it_i {
+		margin: 0 15px 0 0 !important;
+	}
+	.bsa_it_t {
+		font-size: 14px !important;
+		margin: 12px 0 0 0 !important;
+	}
+	.bsa_it_d {
+		padding-right: 10px;
+	}
+	.bsa_it_p{
+		display: none !important;
+	}
+	#demo-bar-ad {
+		width: 416px;
+		position: absolute;
+		right: 0;
+		top: -20px;
+		font: 11px "Lucida Grande", Sans-Serif !important;
+	}
+	#bsap_aplink {
+		position: absolute;
+		color: #999;
+		text-decoration: none;
+		bottom: 8px !important;
+		right: 8px !important;
+		padding: 0 !important;
+	}
+	.bsa_it_p a:hover {
+		background:none !important;
+	}
+	#demo-top-bar {
+		text-align: left;
+		background: #e18728;
+		position: relative;
+		zoom: 1;
+		width: 100% !important;
+		z-index: 6000;
+		box-shadow: 0 0 10px black;
+		padding: 20px 0 15px;
+	}
+	#demo-bar-inside {
+		width: 960px;
+		margin: 0 auto;
+		position: relative;
+	}
+	#demo-top-bar:before, #demo-top-bar:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 6px;
+		width: 100%;
+		height: 100%;
+		background: #e18728;
+		border-bottom: 6px solid #8F5314;
+		z-index: -1;
+		box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+	}
+	#demo-top-bar:before {
+		top: 0;
+		left: 12px;
+		background: #6C6666;
+		border-bottom: 12px solid #62390E;
+	}
+
+	#demo-bar-buttons {
+		display: inline-block;
+		width: 236px;
+		text-align: center;
+		vertical-align: top;
+		font-size: 0;
+	}
+	#demo-bar-buttons a {
+		font-size: 12px;
+		color: white;
+		display: block;
+		margin: 2px 0;
+		text-decoration: none;
+		font: 14px "Lucida Grande", Sans-Serif !important;
+	}
+	#demo-bar-buttons a:hover,
+	#demo-bar-buttons a:focus {
+		color: #333;
+	}
+
+	#demo-bar-badge {
+		display: inline-block;
+		width: 302px;
+		padding: 0 !important;
+		margin: 0 !important;
+		background-color: transparent !important;
+	}
+	#demo-bar-badge a {
+		display: block;
+		width: 100%;
+		height: 38px;
+		border-radius: 0;
+		bottom: auto;
+		margin: 0;
+		background: url(/images/examples-logo.png) no-repeat;
+		background-size: 100%;
+		overflow: hidden;
+		text-indent: -9999px;
+	}
+	#demo-bar-badge:before, #demo-bar-badge:after {
+		display: none !important;
+	}
+</style>
+
+</body>
+</html>
